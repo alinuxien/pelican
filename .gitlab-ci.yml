@@ -1,7 +1,4 @@
-stages:
-  -build
-  
-build_job:
-  stage: build
+build
   script:
     - pelican 
+    
