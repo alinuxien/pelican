@@ -12,6 +12,6 @@ deploy:
   - git config --global user.name "$GITHUB_NAME"
   - git add -A
   - git commit -m "Build from $CI_SERVER_NAME $CI_PIPELINE_ID"
-  - git push
+  - git push $GH_PAGES_BRANCH
   only:
   - master
