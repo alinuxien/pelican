@@ -1,6 +1,6 @@
 Title: Mon Super Titre
-Date: 2020-08-15 18:58
-Modified: 2020-08-15 18:58
+Date: 15-08-2020 18:58
+Modified: 16-08-2020 11:39
 Category: Blog
 Tags: pelican, markdown, gitlab, github, ci/cd
 Slug: mon-permier-post
