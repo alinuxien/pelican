@@ -7,7 +7,6 @@ build:
         
 deploy:
   script:
-  - git remote remove gh_pages
   - git clone --origin gh_pages --depth 1 https://x-access-token:$GITHUB_ACCESS_TOKEN@github.com/$GITHUB_USERNAME/$GITHUB_REPO_NAME.git
   - git config --global user.email "$GITHUB_EMAIL"
   - git config --global user.name "$GITHUB_NAME"
