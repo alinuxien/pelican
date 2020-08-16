@@ -7,11 +7,11 @@ build:
         
 deploy:
   script:
-  - git clone https://$GITHUB_USERNAME:$GITHUB_ACCESS_TOKEN@github.com/$GITHUB_USERNAME/$GITHUB_REPO_NAME.git
+  - git clone --depth 1 https://$GITHUB_USERNAME:$GITHUB_ACCESS_TOKEN@github.com/$GITHUB_USERNAME/$GITHUB_REPO_NAME.git
   - git config --global user.email "$GITHUB_EMAIL"
   - git config --global user.name "$GITHUB_NAME"
   - git add -A
   - git commit -m "Build from $CI_SERVER_NAME $CI_PIPELINE_ID"
-  - git push $GH_PAGES_BRANCH
+  - git push master HEAD:$GH_PAGES_BRANCH
   only:
   - master
