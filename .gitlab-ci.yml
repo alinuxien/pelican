@@ -1,4 +1,6 @@
 build:
   script:
     - pelican  content -o output -s pelicanconf.py
-    
+  artifacts:
+    paths:
+        - output
