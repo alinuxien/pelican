@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Ali Akrour'
 SITENAME = u'Mission Pelican'
-SITEURL = ''
+SITEURL = 'https://alinuxien.github.io/pelican/'
 
 PATH = 'content'
 
