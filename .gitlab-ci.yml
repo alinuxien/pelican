@@ -1,4 +1,4 @@
 build:
   script:
-    - pelican
+    - pelican  content -o output -s pelicanconf.py
     
