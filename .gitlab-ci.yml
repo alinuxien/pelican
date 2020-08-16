@@ -18,5 +18,3 @@ deploy:
     - public
   only:
   - master
-  dependencies:
-    - build
