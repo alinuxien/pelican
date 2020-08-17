@@ -24,3 +24,5 @@ deploy_job:
   - git push gh_pages HEAD:$GH_PAGES_BRANCH
   only:
   - master
+  when: manual
+  
