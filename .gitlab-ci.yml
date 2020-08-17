@@ -5,7 +5,7 @@ stages:
 build_job:
   stage: build
   script:
-    - pelican content -o . -s pelicanconf.py
+    - pelican content -o ./ -s pelicanconf.py
   artifacts:
     paths:
         - output
