@@ -3,7 +3,7 @@ Date: 16-08-2020 17:55
 Modified: 17-08-2020 12:52
 Category: Blog
 Tags: 
-Slug: hello-wolrd
+Slug: hello-world
 Authors: Ali Akrour
 Summary: Un simple Hello World
 
