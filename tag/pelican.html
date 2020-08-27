@@ -2,14 +2,13 @@
 <html lang="fr">
 <head>
         <meta charset="utf-8" />
-        <meta name="generator" content="Pelican" />
         <title>Mon Blog OpenClassRoom - pelican</title>
         <link rel="stylesheet" href="https://alinuxien.github.io/pelican/theme/css/main.css" />
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="https://alinuxien.github.io/pelican/">Mon Blog OpenClassRoom</a></h1>
+                <h1><a href="https://alinuxien.github.io/pelican/">Mon Blog OpenClassRoom </a></h1>
                 <nav><ul>
                     <li><a href="https://alinuxien.github.io/pelican/category/blog.html">Blog</a></li>
                 </ul></nav>
@@ -17,7 +16,42 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://alinuxien.github.io/pelican/mon-permier-post.html">Mon Super Titre</a></h1>
+                    <h1 class="entry-title"><a href="https://alinuxien.github.io/pelican/bilan-projet-4.html">Petit Bilan du Projet 4</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2020-08-27T15:03:00+02:00">
+                Published: Thu 27 August 2020
+        </abbr>
+		<br />
+        <abbr class="modified" title="2020-08-27T15:03:00+02:00">
+                Updated: Thu 27 August 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://alinuxien.github.io/pelican/author/ali-akrour.html">Ali Akrour</a>
+        </address>
+<p>In <a href="https://alinuxien.github.io/pelican/category/blog.html">Blog</a>.</p>
+<p>tags: <a href="https://alinuxien.github.io/pelican/tag/pelican.html">pelican</a> <a href="https://alinuxien.github.io/pelican/tag/gitlab.html">gitlab</a> <a href="https://alinuxien.github.io/pelican/tag/github.html">github</a> <a href="https://alinuxien.github.io/pelican/tag/cicd.html">ci/cd</a> <a href="https://alinuxien.github.io/pelican/tag/letsencrypt.html">letsencrypt</a> </p>
+</footer><!-- /.post-info --><p>Bien que le pipeline de CI/CD demandé soit très simple pour la génération et le déploiement en ligne d'un blog à l'aide de Pelican, la préparation de l'environnement de travail a ouvert énormément de possibilités, et de découvertes associés.</p>
+<p>En particulier, la gestion de la sécurisation du serveur GitLab local a été très rapide et facile avec un nom de domaine réel et enregistré chez un provider, à l'aide de Let's Encrypt et son intégration dans le package GitLab, mais elle s'est avéré longue et délicate dans le cas d'un nom de domaine local.
+En effet, la création d'une autorité locale de certification auto-signé a été nécessaire pour signer le certificat du serveur GitLab local, afin que le navigateur ( ici Chrome ) accepte d'intégrer l'autorité de certification et de considérer notre serveur local comme digne de confiance et sécurisé.
+Ensuite, l'ajout d'un Runner a amené ses difficultés aussi concernant la sécurité, en interne sur le serveur cette fois-ci, bloquant l'exécution des jobs.
+L'utilisation de Git sur le serveur GitLab local a aussi nécessité des aménagements.
+Enfin, monter un serveur de cache ou une registry ont aussi rencontré des difficultés liées a la sécurité, mais n'étant pas absolument nécessaire au fonctionnement du projet, j'ai pu m'en affranchir.</p>
+<p>Par ailleurs, sur les conseils de mon mentor Jean-Sébastien Techer que je remercie encore au passage pour sa patience et ses encouragements, j'ai eu l'occasion de gérer l'installation et la configuration de mon instance GitLab à l'aide de Ansible, générant une réutilisabilité très importante pour la suite du parcours.</p>
+<p>Enfin, tous ces jonglages entre dépôts locaux et en ligne, avec 3 "projets" en parallèle ( gitlab et 2 versions de Pelican ) m'ont permis d'affiner encore ma compréhension de Git et ont été une belle occasion de mise en pratique.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://alinuxien.github.io/pelican/mon-permier-post.html" rel="bookmark"
+                           title="Permalink to Mon Super Titre">Mon Super Titre</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2020-08-15T18:58:00+02:00">
                 Published: Sat 15 August 2020
@@ -32,9 +66,12 @@
         </address>
 <p>In <a href="https://alinuxien.github.io/pelican/category/blog.html">Blog</a>.</p>
 <p>tags: <a href="https://alinuxien.github.io/pelican/tag/pelican.html">pelican</a> <a href="https://alinuxien.github.io/pelican/tag/markdown.html">markdown</a> <a href="https://alinuxien.github.io/pelican/tag/gitlab.html">gitlab</a> <a href="https://alinuxien.github.io/pelican/tag/github.html">github</a> <a href="https://alinuxien.github.io/pelican/tag/cicd.html">ci/cd</a> </p>
-</footer><!-- /.post-info --><p>L'objectif est de mettre en place un pipeline d'intégration et de déploiement continu, qui va recevoir sur un dépot GitLab personnel des articles de blog écrit en Markdown, les convertir automatiquement en HTML, et les publier sur GitHub Pages.
-Dans le pipeline, on pourrait ajouter des étapes de test et de qualité du markdown et du html, mais cela dépasse le cadre du projet.</p>                </article>
-            </aside><!-- /#featured -->
+</footer><!-- /.post-info -->                <p>Un blog généré automatiquement par CI/CD</p>
+                <a class="readmore" href="https://alinuxien.github.io/pelican/mon-permier-post.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>links</h2>
@@ -57,10 +94,10 @@ Dans le pipeline, on pourrait ajouter des étapes de test et de qualité du mark
 
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
 
-                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
 
 </body>
