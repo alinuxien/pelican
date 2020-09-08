@@ -29,17 +29,17 @@
                 Published: Thu 27 August 2020
         </abbr>
 		<br />
-        <abbr class="modified" title="2020-08-27T15:03:00+02:00">
-                Updated: Thu 27 August 2020
+        <abbr class="modified" title="2020-09-08T10:15:00+02:00">
+                Updated: Tue 08 September 2020
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="https://alinuxien.github.io/pelican/author/ali-akrour.html">Ali Akrour</a>
         </address>
 <p>In <a href="https://alinuxien.github.io/pelican/category/blog.html">Blog</a>.</p>
-<p>tags: <a href="https://alinuxien.github.io/pelican/tag/pelican.html">pelican</a> <a href="https://alinuxien.github.io/pelican/tag/gitlab.html">gitlab</a> <a href="https://alinuxien.github.io/pelican/tag/github.html">github</a> <a href="https://alinuxien.github.io/pelican/tag/cicd.html">ci/cd</a> <a href="https://alinuxien.github.io/pelican/tag/letsencrypt.html">letsencrypt</a> </p>
-</footer><!-- /.post-info -->      <p>Bien que le pipeline de CI/CD demandé soit très simple pour la génération et le déploiement en ligne d'un blog à l'aide de Pelican, la préparation de l'environnement de travail a ouvert énormément de possibilités, et de découvertes associés.</p>
-<p>En particulier, la gestion de la sécurisation du serveur GitLab local a été très rapide et facile avec un nom de domaine réel et enregistré chez un provider, à l'aide de Let's Encrypt et son intégration dans le package GitLab, mais elle s'est avéré longue et délicate dans le cas d'un nom de domaine local.
+<p>tags: <a href="https://alinuxien.github.io/pelican/tag/pelican.html">pelican</a> <a href="https://alinuxien.github.io/pelican/tag/gitlab.html">gitlab</a> <a href="https://alinuxien.github.io/pelican/tag/github.html">github</a> <a href="https://alinuxien.github.io/pelican/tag/cicd.html">ci/cd</a> <a href="https://alinuxien.github.io/pelican/tag/letscencrypt.html">letscencrypt</a> </p>
+</footer><!-- /.post-info -->      <p>Bien que le pipeline de <em>CI/CD</em> demandé soit très simple pour la génération et le déploiement en ligne d'un blog à l'aide de <em>Pelican</em>, la préparation de l'environnement de travail a ouvert énormément de possibilités, et de découvertes associés.</p>
+<p>En particulier, la gestion de la sécurisation du serveur <em>GitLab local</em> a été très rapide et facile avec un nom de domaine réel et enregistré chez un provider, à l'aide de Let's Encrypt et son intégration dans le package GitLab, mais elle s'est avéré longue et délicate dans le cas d'un nom de domaine local.
 En effet, la création d'une autorité locale de certification auto-signé a été nécessaire pour signer le certificat du serveur GitLab local, afin que le navigateur ( ici Chrome ) accepte d'intégrer l'autorité de certification et de considérer notre serveur local comme digne de confiance et sécurisé.
 Ensuite, l'ajout d'un Runner a amené ses difficultés aussi concernant la sécurité, en interne sur le serveur cette fois-ci, bloquant l'exécution des jobs.
 L'utilisation de Git sur le serveur GitLab local a aussi nécessité des aménagements.
